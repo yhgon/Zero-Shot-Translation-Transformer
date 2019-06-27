@@ -7,7 +7,7 @@ class Hyperparams:
 
     # preprocessor.py - DownLoad & Preprocess & Save data to disk
 
-    DATASET = 'MultiUN'  # You can use 'OpenSubTitle2018' dataset if you change DATASET as 'OpenSubTitle2018' MultiUN
+    DATASET = 'OpenSubTitle2018'  # You can use 'OpenSubTitle2018' dataset if you change DATASET as 'OpenSubTitle2018' MultiUN
     # data_path: dir for raw data (download dir)
     data_path = '/mnt/workspace/zst/raw'
     # save_path: dir for [training / development / vocabulary data] (preprocessed data will be save at this dir)
