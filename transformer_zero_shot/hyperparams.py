@@ -17,7 +17,7 @@ class Hyperparams:
     languages = ['ES', 'EN', 'FR', 'KO', 'DE', 'JA', 'ZH','IT', 'EL', 'MN','RO','RU'  ]
     #EL : greek, DE: deutch, JA : japan, FR: french, ES : spanish, ZH : chinese, IT : italian,  MN: mongolian, RO : romanian, RU : russian
     # resampling_size: # Maximum size of each parallel language data
-    resampling_size = int(5*1e8)
+    resampling_size = int(5*1e12)
     # dev_from / dev_t0 Development data ( From Language / To Language )
     dev_from = 'EN'
     dev_to = 'KR'
