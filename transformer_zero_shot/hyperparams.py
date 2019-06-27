@@ -7,23 +7,24 @@ class Hyperparams:
 
     # preprocessor.py - DownLoad & Preprocess & Save data to disk
 
-    DATASET = 'MultiUN'  # You can use 'OpenSubTitle2018' dataset if you change DATASET as 'OpenSubTitle2018'
-    # data_path: dir for law data (download dir)
-    data_path = '/media/disk1/public_milab/translation/DATA/MultiUN_data'
+    DATASET = 'MultiUN'  # You can use 'OpenSubTitle2018' dataset if you change DATASET as 'OpenSubTitle2018' MultiUN
+    # data_path: dir for raw data (download dir)
+    data_path = '/mnt/workspace/zst/raw'
     # save_path: dir for [training / development / vocabulary data] (preprocessed data will be save at this dir)
-    save_path = '/media/disk1/public_milab/translation/zeroshot_exp/exp_zeroshot_3rd/multiun_test'
+    save_path = '/mnt/workspace/zst/dataset'
     # languages: Languages that will be used for training and development (for download)
     # you can check possible languages in "http://opus.nlpl.eu/OpenSubtitles2018.php" / "http://opus.nlpl.eu/UN.php"
-    languages = ['ES', 'EN', 'FR']
+    languages = ['ES', 'EN', 'FR', 'KO', 'DE', 'JA', 'ZH','IT', 'EL', 'MN','RO','RU'  ]
+    #EL : greek, DE: deutch, JA : japan, FR: french, ES : spanish, ZH : chinese, IT : italian,  MN: mongolian, RO : romanian, RU : russian
     # resampling_size: # Maximum size of each parallel language data
-    resampling_size = int(5*1e6)
+    resampling_size = int(5*1e8)
     # dev_from / dev_t0 Development data ( From Language / To Language )
-    dev_from = 'FR'
-    dev_to = 'EN'
+    dev_from = 'EN'
+    dev_to = 'KR'
     # dev_size: Define Development data size
     dev_size = int(5*1e5)
     # max_len: Maximum length of tokenized data
-    max_len = 35
+    max_len = 60
     min_len = 10
 
     # data_load.py
